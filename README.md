@@ -186,6 +186,13 @@ Open your browser at `http://localhost:8501`
 - Shows Mistral LLM explanations on alert selection
 - Updates charts live (attack distribution, severity breakdown, score over time)
 - Tracks device risk profile per IP address
+  <img width="1904" height="829" alt="image" src="https://github.com/user-attachments/assets/fe84da5f-7b9c-4fab-91d5-879bd18c12a8" />
+  <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/ba0ed255-61eb-4918-b397-521822bb2f37" />
+  <img width="1910" height="868" alt="image" src="https://github.com/user-attachments/assets/b4196ad4-c620-4991-a4f3-704349de014d" />
+  <img width="1430" height="667" alt="image" src="https://github.com/user-attachments/assets/6660f5a7-5c38-4267-8a54-8363674830a8" />
+  <img width="1457" height="451" alt="image" src="https://github.com/user-attachments/assets/f9ff680c-eb5c-4ea4-8c28-62cd6cd5cf61" />
+
+
 
 ---
 
