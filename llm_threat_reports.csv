@@ -1,0 +1,130 @@
+src_ip,src_port,dst_ip,dst_port,proto,service,conn_state,src_bytes,dst_bytes,duration,attack_type,anomaly_score,severity,true_label,llm_report
+192.168.1.195,53669,192.229.232.240,80,tcp,http,SF,87200,42137269,135.928986,normal,0.2826,HIGH,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: HIGH
+BEHAVIOR: The device with IP address 192.168.1.195 has engaged in an unusual amount of HTTP traffic (4,213,7269 bytes received) over a prolonged duration (135.93 seconds) to the destination IP 192.229.232.240, which deviates from its typical network behavior. This activity may suggest data exfiltration disguised as normal traffic or a misconfigured device.
+RISK REASON: The high anomaly score of 0.2826 and the significant deviation from the baseline traffic pattern confirm this as a HIGH threat.
+ACTION: Immediate investigation is required to determine the cause of this anomalous behavior, potentially involving network monitoring, device inspection, or configuration review."
+192.168.1.195,53669,192.229.232.240,80,tcp,http,SF,87200,42137269,135.928986,normal,0.2826,HIGH,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: HIGH
+BEHAVIOR: The device with IP address 192.168.1.195 has engaged in an unusual HTTP session of 135.93 seconds duration, sending 87,200 bytes and receiving a large volume of 4,213,7269 bytes. This behavior deviates from the baseline, suggesting potential data exfiltration or misconfiguration.
+RISK REASON: The high anomaly score (0.2826) and the significant deviation in byte volumes confirm this as a HIGH threat.
+ACTION: Immediate investigation is required to determine if this traffic represents a security breach, misconfigured device, or other unusual activity."
+192.168.1.190,37814,172.217.25.138,443,tcp,ssl,SF,2061,4562738,110.954185,normal,0.2769,HIGH,0,LLM analysis unavailable after retries
+2405:6e00:10ce:2c00:9064:17:85d2:57d4,50152,2a01:111:2003::50,80,tcp,http,SF,93396,30964998,107.612992,normal,0.2769,HIGH,0,LLM analysis unavailable after retries
+2405:6e00:10ce:2c00:9064:17:85d2:57d4,50152,2a01:111:2003::50,80,tcp,http,SF,93396,30964998,107.612992,normal,0.2769,HIGH,0,LLM analysis unavailable after retries
+192.168.1.193,49425,172.217.25.142,443,tcp,ssl,SF,75445,1538109,185.05358,normal,0.2742,HIGH,0,LLM analysis unavailable after retries
+192.168.1.195,53661,192.229.232.240,80,tcp,http,SF,58595,23064350,86.878888,normal,0.2739,HIGH,0,LLM analysis unavailable after retries
+192.168.1.193,49393,172.217.25.142,443,tcp,ssl,SF,34901,1592398,183.069423,normal,0.2723,HIGH,0,LLM analysis unavailable after retries
+2405:6e00:10ce:2c00:9064:17:85d2:57d4,50157,2a01:111:2003::50,80,tcp,http,SF,41871,12444445,48.702647,normal,0.272,HIGH,0,LLM analysis unavailable after retries
+192.168.1.31,32842,216.58.199.34,443,tcp,ssl,SF,19496,124896,223.094021,mitm,0.2682,CRITICAL,1,LLM analysis unavailable after retries
+192.168.1.193,49362,192.168.1.33,8080,tcp,-,S1,254231,612066,92891.96333,backdoor,0.2666,HIGH,1,LLM analysis unavailable after retries
+192.168.1.30,38110,173.241.248.220,443,tcp,ssl,SF,3515,6314,187.110956,dos,0.2617,HIGH,1,LLM analysis unavailable after retries
+192.168.1.30,39180,18.184.104.180,8080,tcp,-,SF,1286281,749633,1123.254189,ddos,0.2607,CRITICAL,1,LLM analysis unavailable after retries
+192.168.1.31,38852,52.59.177.21,8080,tcp,-,OTH,1036995,604190,1286.812277,ddos,0.2607,CRITICAL,1,LLM analysis unavailable after retries
+192.168.1.193,49247,192.168.1.33,8080,tcp,-,SF,7991,415170,35.452884,backdoor,0.2578,HIGH,1,"THREAT TYPE: Backdoor Attack
+SEVERITY: HIGH
+BEHAVIOR: The device with IP 192.168.1.193 initiated an unauthorized remote access attempt on port 8080, which is unusual and suspicious. The sustained duration of the connection (35.45 seconds) and high volume of data transferred (7991 bytes sent and 415170 bytes received) indicate potential malicious activity.
+RISK REASON: The anomaly score of 0.2578, along with the traffic pattern, confirms this as a HIGH threat due to the risk of an attacker gaining persistent control over the compromised IoT device.
+ACTION: Immediate investigation is required to identify the source of the threat and take appropriate actions to secure the network and the affected device."
+192.168.1.195,52472,52.230.84.217,443,tcp,ssl,S1,6791,10052,8276.602116,normal,0.2567,HIGH,0,LLM analysis unavailable after retries
+192.168.1.31,44032,107.154.150.167,443,tcp,ssl,SF,1926,80361,183.025836,mitm,0.2559,CRITICAL,1,"THREAT TYPE: Man-in-the-Middle (MitM)
+SEVERITY: CRITICAL
+BEHAVIOR: The device with IP address 192.168.1.31 is engaging in an SSL encrypted communication with the destination IP 107.154.150.167, which shows signs of a MitM attack as indicated by the detected type. The large amount of data transferred (Bytes Received: 80361) and the duration of the connection (183.03 seconds) suggest that the device's communication may be intercepted and potentially modified.
+RISK REASON: The anomaly score of 0.2559 indicates a higher level of suspicion, and the unusual traffic pattern further confirms this as a CRITICAL threat.
+ACTION: Immediately investigate the device (192.168.1.31) for any signs of ARP anomalies, unusual relay patterns, or duplicate flows between devices. Implement network segmentation or traffic filtering to isolate the device and prevent further data interception."
+192.168.1.30,37830,52.196.227.95,443,tcp,ssl,SF,2631,12179,187.599148,dos,0.254,HIGH,1,LLM analysis unavailable after retries
+192.168.1.195,51581,34.209.222.186,443,tcp,ssl,S3,819,72157,159.791333,normal,0.2536,HIGH,0,LLM analysis unavailable after retries
+192.168.1.195,52361,52.230.7.59,443,tcp,ssl,SF,3841,6772,2525.115937,normal,0.2532,HIGH,0,LLM analysis unavailable after retries
+192.168.1.195,53658,192.229.232.240,80,tcp,http,RSTO,1333,1107430,1.337356,normal,0.2494,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.31,60546,192.168.1.152,80,tcp,-,S3,359122580,359159263,303.259946,ddos,0.2489,CRITICAL,1,LLM analysis unavailable after retries
+192.168.1.31,40250,192.168.1.184,443,tcp,ssl,S3,892344222,892575820,392.608135,ddos,0.247,CRITICAL,1,LLM analysis unavailable after retries
+2405:6e00:10ce:2c00:9064:17:85d2:57d4,50128,2a01:111:2003::50,80,tcp,http,SF,680,1049758,11.653387,normal,0.2446,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.31,48970,101.119.11.17,80,tcp,http,S2,2304,3073,299.714124,mitm,0.244,CRITICAL,1,LLM analysis unavailable after retries
+192.168.1.34,50336,104.74.27.78,443,tcp,ssl,SF,4598,6528,120.680118,mitm,0.2435,CRITICAL,1,LLM analysis unavailable after retries
+192.168.1.190,44891,192.168.1.152,1880,tcp,http,SF,1240,654446,6.819151,normal,0.2425,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.152,47160,54.187.116.27,443,tcp,ssl,SF,943,5412,116.277257,normal,0.2422,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.30,60136,192.168.1.152,1880,tcp,-,SF,1238,549362,9.858615,dos,0.2415,HIGH,1,"THREAT TYPE: Denial of Service (DoS)
+SEVERITY: HIGH
+BEHAVIOR: The device with IP 192.168.1.30 is sending a large amount of traffic to the destination IP 192.168.1.152 on port 1880, with a high number of failed connection states and a long duration. This behavior suggests a single-source attack aimed at disrupting service availability.
+RISK REASON: The anomaly score of 0.2415 indicates a higher level of suspicion, and the traffic pattern exhibits characteristics consistent with a Denial of Service (DoS) attack.
+ACTION: Immediate investigation is required to identify the source of this traffic and implement measures to mitigate the ongoing threat."
+192.168.1.180,60248,192.168.1.152,1880,tcp,http,SF,12213,831372,18.314725,normal,0.2414,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.180 initiated an HTTP connection to 192.168.1.152 using TCP protocol, which has an unusually high byte volume (Bytes Sent: 12213, Bytes Received: 831372) and a prolonged duration of 18.31 seconds. This traffic pattern is suspicious as it deviates from the established baseline.
+RISK REASON: The anomaly score of 0.2414 indicates that this activity is more likely to be malicious or indicative of data exfiltration disguised as normal traffic, or a misconfigured device.
+ACTION: It is recommended that the security team investigate further into the origin and purpose of this traffic for potential data breach prevention measures."
+192.168.1.190,44915,192.168.1.152,1880,tcp,http,SF,1013,584410,6.15258,normal,0.2412,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.190 initiated an HTTP connection to 192.168.1.152, sending a relatively small amount of data (1013 bytes) compared to the large volume received (584410 bytes). This unusual data exchange over a prolonged duration (6.15 seconds) deviates from the baseline, suggesting potential data exfiltration or misconfiguration.
+RISK REASON: The anomaly score of 0.2412 and traffic pattern indicate that this is not typical behavior for this device, posing a medium risk.
+ACTION: The security team should investigate further to determine the cause of the unusual traffic and address any potential data exfiltration or misconfiguration issues."
+192.168.1.195,53646,13.107.4.50,80,tcp,http,SF,1313,1170019,1.39576,normal,0.2394,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.195 has sent a relatively small amount of data (1313 bytes) but received an unusually large volume (1,170,019 bytes) over the HTTP protocol to the destination IP 13.107.4.50. This traffic pattern suggests potential data exfiltration disguised as normal communication or a misconfigured device.
+RISK REASON: The anomaly score of 0.2394 and the significant deviation from the baseline byte volume confirm this as a MEDIUM threat.
+ACTION: The security team is recommended to investigate this device and its communication pattern for potential data leaks or misconfigurations, and take necessary actions to secure the network."
+192.168.1.34,40326,157.240.8.18,443,tcp,ssl,SF,1313,4478,180.310948,mitm,0.2391,CRITICAL,1,LLM analysis unavailable after retries
+192.168.1.34,48098,216.58.200.98,443,tcp,ssl,SF,15287,62172,16.253196,mitm,0.2388,CRITICAL,1,LLM analysis unavailable after retries
+2405:6e00:10ce:2c00:9064:17:85d2:57d4,49948,2606:2800:147:120f:30c:1ba0:fc6:265a,443,tcp,ssl,SF,859,20840,109.719694,normal,0.2386,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 2405:6e00:10ce:2c00:9064:17:85d2:57d4 is exhibiting unusual SSL traffic towards the destination IP 2606:2800:147:120f:30c:1ba0:fc6:265a on port 443. The high volume of bytes sent and received, along with the extended duration of the connection, deviate from normal traffic patterns, suggesting potential data exfiltration or misconfiguration.
+RISK REASON: The anomaly score of 0.2386 indicates that this activity is more suspicious than typical network behavior, confirming a MEDIUM threat level.
+ACTION: The security team should closely monitor the device's traffic and investigate the cause for these unusual characteristics to ensure data integrity and prevent potential data breaches."
+192.168.1.31,37890,192.168.1.184,443,tcp,-,S3,927145177,927381869,395.038276,ddos,0.2383,CRITICAL,1,"THREAT TYPE: Distributed Denial of Service (DDoS)
+SEVERITY: CRITICAL
+BEHAVIOR: The device with IP 192.168.1.31 is sending a large volume of traffic, specifically 927145177 bytes sent and 927381869 bytes received over TCP protocol within a short duration of 395.04 seconds, targeting the device with IP 192.168.1.184 on port 443. This traffic pattern is suspicious due to its high packet count and short burst duration, which are indicative of a volumetric flood attack.
+RISK REASON: The anomaly score of 0.2383 and the observed traffic pattern suggest that this is a CRITICAL threat as it has the potential to bring down network infrastructure and disrupt all connected IoT devices.
+ACTION: Immediately isolate the source device (192.168.1.31) from the network to prevent further disruption, and implement DDoS mitigation strategies to protect the network resources and connected devices."
+192.168.1.152,55438,216.58.199.74,443,tcp,ssl,SF,1651,3510,171.040934,normal,0.2383,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.152 has established a TCP connection over SSL (port 443) with the destination IP 216.58.199.74, exhibiting an unusually high byte volume (Bytes Sent: 1651, Bytes Received: 3510) and prolonged duration (171.04 seconds). This traffic pattern is suspicious as it deviates from the baseline, potentially disguising data exfiltration or misconfiguration within seemingly normal traffic.
+RISK REASON: The anomaly score of 0.2383 indicates that this traffic has unusual characteristics, confirming it as a MEDIUM threat.
+ACTION: It is recommended to investigate the device's configuration and network activity for potential data exfiltration or misconfiguration, and take appropriate remediation actions if necessary."
+192.168.1.31,57456,101.119.11.11,80,tcp,http,SF,2304,3072,293.766464,mitm,0.2365,CRITICAL,1,"THREAT TYPE: Man-in-the-Middle (MitM)
+SEVERITY: CRITICAL
+BEHAVIOR: The device with IP 192.168.1.31 is engaging in a potential interception of traffic using the HTTP protocol on port 80, as indicated by the detected type and anomaly score. The prolonged duration (293.77 seconds) and high volume of data transferred (total of 5376 bytes) suggest that this activity may involve the modification or interception of communications between devices.
+RISK REASON: The anomaly score of 0.2365, higher than average, and the traffic pattern confirm this as a CRITICAL threat due to the potential for widespread compromise of all communications between devices.
+ACTION: Immediately investigate the device with IP 192.168.1.31 for signs of unauthorized access or malicious activity. Implement network segmentation, intrusion detection systems, and monitor for any ARP anomalies, unusual relay patterns, or duplicate flows between devices to prevent further compromise."
+192.168.1.32,46508,101.119.11.17,80,tcp,http,SF,2304,3072,293.185237,scanning,0.2365,HIGH,1,"THREAT TYPE: Network Scanning / Reconnaissance
+SEVERITY: HIGH
+BEHAVIOR: The device with IP 192.168.1.32 has been observed making a prolonged connection (293.19 seconds) to the destination IP 101.119.11.17 on port 80 using TCP protocol, which is indicative of systematic port scanning or network reconnaissance activity. The large number of bytes sent and received also suggests data gathering intentions.
+RISK REASON: The anomaly score of 0.2365 and the observed traffic pattern confirm this as a HIGH threat due to its potential for being an initial phase of a targeted attack.
+ACTION: Immediate investigation is required, focusing on identifying the device and understanding its purpose within the network. Network access control measures should be reinforced to prevent any further suspicious activity."
+192.168.1.152,36154,216.58.199.74,443,tcp,ssl,SF,1652,2829,171.120424,normal,0.2365,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.152 has exhibited unusual SSL traffic over a prolonged duration (171.12 seconds) and high byte volumes (Bytes Sent: 1652, Bytes Received: 2829), which deviates from the established baseline. This behavior suggests potential data exfiltration disguised as normal traffic or misconfiguration of the device.
+RISK REASON: The anomaly score of 0.2365 and the observed deviation from the norm indicate a medium risk level.
+ACTION: It is recommended that the security team conducts a thorough investigation of this device, focusing on its configuration and data transmission patterns to determine if any remedial action is necessary."
+192.168.1.152,38012,172.217.25.138,443,tcp,ssl,SF,1651,3342,171.047375,normal,0.2357,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+
+BEHAVIOR: The device with IP address 192.168.1.152 initiated an SSL connection to destination IP 172.217.25.138, which is unusual due to the high byte volume (1651 bytes sent and 3342 bytes received) and extended duration of 171.05 seconds, deviating from the established network baseline.
+
+RISK REASON: The anomaly score of 0.2357 indicates that this traffic pattern is more suspicious, suggesting potential data exfiltration disguised as normal traffic or a misconfigured device.
+
+ACTION: Conduct a detailed investigation into the source device's activity and configuration to determine if any unauthorized data transfers occurred. Further analysis of the destination IP may also be necessary to understand its role in this anomalous behavior."
+192.168.1.195,50325,117.18.232.200,443,tcp,ssl,SF,859,20840,88.627116,normal,0.2353,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.195 exhibited an unusually high volume of data transfer (20,840 bytes received) over a prolonged duration (88.63 seconds) using SSL protocol on port 443, which deviates from the baseline norms. This behavior is suspicious as it may indicate potential data exfiltration disguised as normal traffic or a misconfigured device.
+RISK REASON: The anomaly score of 0.2353 and the traffic pattern confirm this as a MEDIUM threat due to the high volume of data transferred and the extended duration of the connection.
+ACTION: It is recommended that the security team conducts a thorough investigation into the device's activities, including a review of its configuration settings and network behavior, to determine if any remediation actions are necessary."
+192.168.1.152,45066,216.58.199.74,443,tcp,ssl,SF,1652,3619,171.113963,normal,0.2352,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.152 has exhibited unusual characteristics in its SSL traffic, sending 1652 bytes and receiving 3619 bytes over a duration of 171.11 seconds, which is significantly longer than typical communication patterns for this device.
+RISK REASON: The anomaly score of 0.2352 indicates that while the traffic appears legitimate, it deviates from expected behavior, potentially suggesting data exfiltration or a misconfigured device.
+ACTION: It is recommended that the security team investigate this device for potential misconfiguration or unauthorized activity, and monitor its network traffic more closely in the near future."
+192.168.1.152,34130,216.58.199.74,443,tcp,ssl,SF,1652,3072,171.844614,normal,0.2349,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.152 has engaged in SSL traffic over TCP protocol with an unusual duration of 171.84 seconds and a high byte volume (Bytes Sent: 1652, Bytes Received: 3072), which deviates from the baseline, suggesting potential data exfiltration disguised as normal traffic or misconfiguration.
+RISK REASON: The anomaly score of 0.2349 and the observed traffic pattern indicate a MEDIUM threat level.
+ACTION: It is recommended to conduct a thorough investigation into this device's activity, including reviewing its configuration settings and network behavior patterns, and take appropriate remediation actions if necessary."
+192.168.1.152,55928,216.58.199.74,443,tcp,ssl,SF,1653,3163,170.190963,normal,0.2347,MEDIUM,0,"THREAT TYPE: Anomalous Normal Traffic
+SEVERITY: MEDIUM
+BEHAVIOR: The device with IP address 192.168.1.152 has exhibited unusual characteristics in its SSL traffic, sending a high volume of bytes (1653) and receiving even more (3163), over an extended duration of 170.19 seconds. This activity deviates from the baseline, potentially disguising data exfiltration or indicating a misconfigured device.
+RISK REASON: The anomaly score of 0.2347 and the traffic pattern confirm this as a MEDIUM threat due to the potential for unauthorized data transfer or system vulnerability.
+ACTION: The security team is recommended to conduct a thorough investigation and analysis of the device's SSL traffic, including reviewing logs and network configurations, to determine the cause of the anomaly and mitigate any potential risks."
+192.168.1.152,55914,216.58.199.74,443,tcp,ssl,SF,1653,3292,171.070291,normal,0.2347,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.152,42300,172.217.25.138,443,tcp,ssl,SF,1652,3028,171.046016,normal,0.2344,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.152,53268,172.217.25.138,443,tcp,ssl,SF,1652,3081,171.065163,normal,0.2344,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.152,57610,172.217.25.138,443,tcp,ssl,SF,1652,3337,171.046043,normal,0.2344,MEDIUM,0,LLM analysis unavailable after retries
+192.168.1.195,54133,207.46.155.185,80,tcp,http,SF,4266,3902,162.079581,normal,0.2339,MEDIUM,0,LLM analysis unavailable after retries
